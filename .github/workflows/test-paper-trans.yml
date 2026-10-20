@@ -36,5 +36,6 @@ jobs:
       - name: Test page jobs without image generation or publisher APIs
         working-directory: skills/nature-paper-trans
         env:
+          PYTHONUTF8: '1'
           PYTHONIOENCODING: utf-8
         run: python -m pytest -q tests
